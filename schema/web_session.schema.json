@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WebSession",
+  "type": "object",
+  "required": [
+    "user_id",
+    "device_id",
+    "browser",
+    "url",
+    "title",
+    "domain",
+    "started_at",
+    "ended_at",
+    "active_seconds"
+  ],
+  "properties": {
+    "id": {"type": "integer"},
+    "user_id": {"type": "integer"},
+    "device_id": {"type": "integer"},
+    "browser": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "title": {"type": "string"},
+    "domain": {"type": "string"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "ended_at": {"type": "string", "format": "date-time"},
+    "active_seconds": {"type": "integer"}
+  }
+}

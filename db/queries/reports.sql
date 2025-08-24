@@ -1,0 +1,2 @@
+-- Placeholder SQL queries for reporting.
+-- Add aggregation queries here.

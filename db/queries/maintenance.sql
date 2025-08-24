@@ -1,0 +1,1 @@
+-- Placeholder SQL for maintenance tasks like vacuum or pruning.

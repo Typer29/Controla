@@ -1,0 +1,17 @@
+idle_threshold_seconds: 60
+poll_interval_ms: 1000
+features:
+  history_backfill: true
+  etw_domain: false
+storage:
+  sqlite_path: data/agent.db
+  retention_days: 90
+api:
+  base_url: https://server.local
+  jwt: "<token>"
+  tls_cert_path: certs/agent.pfx
+logging:
+  level: INFO
+batch:
+  size: 100
+  interval_ms: 1000

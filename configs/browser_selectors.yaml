@@ -1,0 +1,6 @@
+chrome:
+  address_bar: "Address and search bar"
+edge:
+  address_bar: "Address and search bar"
+firefox:
+  address_bar: "urlbar"

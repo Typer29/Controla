@@ -8,8 +8,16 @@ version = "0.1.0"
 description = "Windows monitoring agent skeleton"
 readme = "README.md"
 requires-python = ">=3.11"
-license = {text = "MIT"}
+license = {file = "LICENSE"}
+authors = [{name = "Controla Devs"}]
 dependencies = [
     "SQLAlchemy>=2.0",
     "alembic>=1.11",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.1.8",
+    "nox>=2023.4.22",
 ]

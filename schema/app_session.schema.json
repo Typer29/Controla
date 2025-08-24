@@ -21,7 +21,9 @@
       "properties": {
         "name": {"type": "string"},
         "exe_path": {"type": "string"},
-        "file_hash_sha256": {"type": "string"}
+        "file_hash_sha256": {"type": "string"},
+        "publisher": {"type": "string"},
+        "category": {"type": "string"}
       }
     },
     "pid": {"type": "integer"},

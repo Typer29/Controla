@@ -18,15 +18,20 @@ def main() -> None:
     parser.add_argument(
         "revision", nargs="?", default="head", help="Target revision"
     )
+    parser.add_argument(
+        "--config",
+        type=Path,
+        default=(
+            Path(__file__).resolve().parents[1]
+            / "db"
+            / "migrations"
+            / "alembic.ini"
+        ),
+        help="Path to alembic.ini",
+    )
     args = parser.parse_args()
 
-    cfg_path = (
-        Path(__file__).resolve().parent.parent
-        / "db"
-        / "migrations"
-        / "alembic.ini"
-    )
-    alembic_cfg = Config(str(cfg_path))
+    alembic_cfg = Config(str(args.config))
 
     if args.action == "upgrade":
         command.upgrade(alembic_cfg, args.revision)

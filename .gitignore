@@ -6,20 +6,33 @@ __pycache__/
 # Virtual environments
 venv/
 .env/
+.venv/
+.nox/
 
 # Distribution / packaging
 build/
 dist/
 *.egg-info/
+.coverage
+.pytest_cache/
+
+# Type checker and linter caches
+.mypy_cache/
+.ruff_cache/
 
 # Databases and secrets
 *.sqlite
 *.db
 *.pfx
 *.env
+*.sqlite3
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Editors
+.idea/
+.vscode/
 
 db/local_dev.sqlite

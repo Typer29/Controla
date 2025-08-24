@@ -21,6 +21,7 @@
     "url": {"type": "string", "format": "uri"},
     "title": {"type": "string"},
     "domain": {"type": "string"},
+    "category": {"type": "string"},
     "started_at": {"type": "string", "format": "date-time"},
     "ended_at": {"type": "string", "format": "date-time"},
     "active_seconds": {"type": "integer"}
